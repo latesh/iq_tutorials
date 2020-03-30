@@ -76,7 +76,7 @@ arm throttle
 takeoff 15
 ```
 
-## Using MAVROS to get telemetry data from the fcu
+## Using MAVROS to get telemetry data from the FCU
 
 Now the the topic `/gazebo/model_states` is the true model position in the simulator. This isn't something we can use in real life. In real life, we have to use the estimate of the drone's position which is formulated from a combination of its sensors. This position is trasmitted using a communication protocol called mavlink. These messages are stripped down and are optimized for radio transmission. MAVROS is a middle man which translates the MAVlink messages into ROS messages, which are easy to use and common between different robot systems. To start mavros run
 
